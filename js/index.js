@@ -59,8 +59,8 @@ let list = [
 
 myBtn.addEventListener("click", () => {
   let num = Math.ceil(Math.random() * 10);
-  myAuther.innerHTML = list[num + 1].name;
-  myQuote.innerHTML = list[num + 1].qoute;
+  myAuther.innerHTML = list[num - 1].name;
+  myQuote.innerHTML = list[num - 1].qoute;
   myImg.setAttribute("src", `./images/${num}.jpg`);
   console.log(num);
 });
